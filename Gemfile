@@ -58,3 +58,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "faker", "~> 3.4"
+
+gem "hotwire_combobox", "~> 0.3.1"

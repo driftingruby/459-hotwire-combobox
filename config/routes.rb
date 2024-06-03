@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  namespace :searches do
+    resource :brands, only: :show
+    resource :categories, only: :show
+  end
+  resources :products
   root to: 'welcome#index'
   get 'welcome/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

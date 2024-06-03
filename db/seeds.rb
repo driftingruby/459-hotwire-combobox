@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+1000.times do
+  Category.find_or_create_by(name: Faker::Book.genre)
+  Brand.find_or_create_by(name: Faker::Company.name)
+end
